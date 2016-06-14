@@ -3,7 +3,7 @@
 
 <head>
  
-  <title>Startup project</title>
+  <title>Spotify search</title>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,27 @@
 
 <body>
 
-  <h1>Startup project</h1>
+  <header>
+    <h1>Spotify Search</h1>
+    <input id="query" type="text">
+    <button id="search-btn">Search</button>
+  </header>
+
+  <div id="results">Results will appear here</div>
+  
+
+
+  <!-- templates Mustache -->
+  
+  <script id="artist-row" type="text/html">
+    <div class="artist">
+      <img src="{{imageUrl}}">
+      <div class="details">
+        <div class="name">{{name}}</div>
+        <div class="followers">{{followers}} followers</div>
+      </div> 
+    </div>
+  </script>
   
 
   <script src="extras/jquery-2.2.4.js"></script>

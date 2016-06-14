@@ -1,8 +1,43 @@
 
-body {
-  padding: 20px;
-}
-
 * {
   box-sizing: border-box;
+}
+
+#results {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artist {
+  height: 100px;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.artist img {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.details {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 20px;
+  color: #3d9535;
+}
+
+.followers {
+  color: grey;
+}
+
+header {
+  background: #3d9535;
+  padding: 20px;
+  color: white;
 }
